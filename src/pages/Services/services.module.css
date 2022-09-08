@@ -49,3 +49,7 @@ color:rgb(236, 212, 212);
     flex:4;
     justify-content:space-evenly;
 }
+
+.cardRight>h4{
+    color:white;
+}

@@ -1,9 +1,9 @@
- let data = {
-     servicesSection : [
+export let servicesSection = [
          {
         title: "Web Development",
         desc: "Full-service web development and design delivered in an easy-to-understand fashion", 
-        key:1     
+             key: 1,
+        icon:"<TerminalIcon>"
          
         },
         {
@@ -22,6 +22,5 @@
             key:4
         }
 ]
- }
+ 
 
-export default data
