@@ -29,11 +29,13 @@
 .nav_list:hover {
 	transform: scale(1.1);
 	color: white;
+	color: rgb(235, 199, 205);
 }
 
 .nav_list > a {
 	text-decoration: none;
-	color: rgb(215, 188, 188);
+	color: rgb(147, 221, 251);
+	font-size: 1.1rem;
 }
 
 .nav_list > a:hover {
