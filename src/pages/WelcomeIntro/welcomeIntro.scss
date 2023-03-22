@@ -1,0 +1,125 @@
+.welcomeIntro {
+	width: 100%;
+	height: 100vh;
+	height: 100svh;
+	// display: flex;
+	// justify-content: center;
+	color: white;
+    background: rgb(111,82,187);
+    background: linear-gradient(180deg, rgba(111,82,187,1) 0%, rgba(93,64,169,1) 50%, rgba(69,47,128,1) 100%);
+    background: rgb(10,13,122);
+background: linear-gradient(180deg, rgba(10,13,122,1) 0%, rgba(8,10,87,1) 50%, rgba(6,7,51,1) 100%);
+    position:relative;
+
+    .bg_Image{
+        width: 100%;
+        position:absolute;
+        height: 100%;
+        background: url(./../../images/WordCloudImg.png) ;
+        opacity:0.07;
+
+        max-width: 100%;
+        background-repeat: repeat;
+        object-fit: contain;
+        // z-index: -100;
+        // height: 100vh;
+        height: 100%;
+    }
+    .OuterContainer{
+        position:absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+	    justify-content: center;
+        align-items: center;
+        .main_container {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-content: space-around;
+            position:absolute;
+
+
+            .headTitle{
+                font-size: 3rem;
+                font-size: clamp(2rem, -0.2501rem + 3.0001vw, 3.5rem);
+                font-size: clamp(2.5rem, 1rem + 2.0001vw, 3.5rem);
+                // font-size: clamp(3rem, 1.5rem + 2.0001vw, 4rem);
+                font-weight: 500;
+                line-height: 6rem;
+                letter-spacing: 0.1rem;
+                  font-size: clamp(2.5rem, 1rem + 2.0001vw, 3.5rem);
+                // font-size: clamp(3rem, 1.5rem + 2.0001vw, 4rem);
+                font-weight: 300;
+                line-height: 6rem;
+                letter-spacing: 0.1rem;
+            }
+            .subTitleSection{
+                height: 50vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                 .subTitle{
+                    font-size: 1.5rem;
+                    font-size: clamp(1.3rem, 0.7rem + 0.8vw, 1.7rem);
+                    color: rgb(181, 165, 222);
+                    // margin: 2rem 0;
+                    font-weight: 300;
+                    letter-spacing: 0.05rem;;
+                    font-size: clamp(1rem, 0.4rem + 0.8vw, 1.4rem);
+                    color:white
+                    
+                }
+            }
+
+          
+
+            .Navbutton{
+                width: 25%;
+                // width: 40%;
+                padding: 1rem 0.5rem;
+                font-size: 0.8rem;
+                font-weight: 500;
+                color: white;
+                background-color: rgb(94, 66, 165);
+                letter-spacing: 0.15rem;
+                border-radius: 50px;
+                border: 0.5px solid grey;
+                transition: background-color 0.3s;
+                 background: linear-gradient(222deg, #222585, #4549c3, #161852);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 6s ease infinite;
+    -moz-animation: AnimationName 6s ease infinite;
+    animation: AnimationName 6s ease infinite;
+            }
+            @-webkit-keyframes AnimationName {
+    0%{background-position:94% 0%}
+    50%{background-position:7% 100%}
+    100%{background-position:94% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:94% 0%}
+    50%{background-position:7% 100%}
+    100%{background-position:94% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:94% 0%}
+    50%{background-position:7% 100%}
+    100%{background-position:94% 0%}
+}
+
+            .Navbutton:hover {
+            	background-color: rgb(105, 81, 168);
+                opacity:0.7;
+}
+}
+    }
+
+
+       
+}
+
+

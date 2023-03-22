@@ -1,78 +1,71 @@
-import React, { useState } from 'react';
-import styles from './contact.module.css';
-import Footer from '../../components/Footer/Footer';
+import React from 'react';
+import './contact.scss';
+// import Footer from '../../components/Footer/Footer';
+import Phone from './../../images/phone.png';
+import Email from './../../images/email.png';
+import linkedin from './../../images/linkedin.png';
+// import { Link } from 'react-router-dom';
 
 const Contact = () => {
-	let [textarea, settextarea] = useState('');
-
-	let handleChange = (e) => {
-		settextarea(e.target.value);
-	};
 	return (
 		<>
-			<div className={`${styles.contact}`}>
-				<div className={styles.mainContainer}>
-					<div className={styles.contact_Left}>
-						<div className={styles.contentDesc}>
-							<h1>{`Let's get started`}</h1>
-							<p>
-								{`Like what you see? Let's connect and buildsomething great, together!`}
-							</p>
+			<div className='contact'>
+				<div className='bg_Image'></div>
+				<div className='outer_Container'>
+					<div className='main_container'>
+						<div className='work_desc'>
+							<h1 className='headTitle'>Let&apos;s Connect</h1>
 						</div>
-						<div className={styles.detailForm}>
-							<form action='#' className={styles.userForm}>
-								<div className={styles.nameNemail}>
-									<div className={styles.name}>
-										<label htmlFor='userName' className={styles.userName}>
-											Name
-										</label>
-										<input
-											type='text'
-											id='userName'
-											className={styles.userNamebox}
-										/>
+						<div className='contentPart'>
+							<div className='cardsGroup'>
+								<h4>
+									If your organization is seeking a professional with expertise
+									in :
+								</h4>
+								<ul>
+									<li>Customer support management</li>
+									<li>Platform/systems knowledge management</li>
+									<li>Application demonstrations</li>
+									<li>Implementation management</li>
+									<li>Training portfolio management</li>
+									<li>Relationship management</li>
+									<li>Adult training methodologies</li>
+									<li>Instructional design principles</li>
+								</ul>
+								<h4>
+									I would be delighted to discuss how my skills and experience
+									can align with your organization&apos;s objectives.
+								</h4>
+							</div>
+							<div className='contactDetails'>
+								<h4>I can be reached on: </h4>
+								<div className='c_info'>
+									<div className='c_info_item phoneItem'>
+										<img src={Phone} alt='' className='c_icon phoneIcon' /> +65
+										90301206
 									</div>
-									<div className={styles.email}>
-										<label htmlFor='userEmail' className={styles.userEmail}>
-											Email
-										</label>
-										<input
-											type='text'
-											id='userEmail'
-											className={styles.userEmailbox}
-										/>
+									<div className='c_info_item'>
+										<img src={Email} alt='' className='c_icon' />
+										contactkunaldixit@gmail.com
+									</div>
+									<div className='c_info_item'>
+										<img src={linkedin} alt='' className='c_icon' />
+
+										<a
+											rel='noreferrer'
+											target='_blank'
+											href='https://www.linkedin.com/in/contactkunaldixit'
+										>
+											LinkedIn Profile
+										</a>
 									</div>
 								</div>
-
-								<div className={styles.userTextMessageOnly}>
-									<label htmlFor='userMessage' className={styles.userMessage}>
-										Message
-									</label>
-									<textarea
-										id={styles.userMessage}
-										value={textarea}
-										onChange={handleChange}
-										className={styles.userMessagebox}
-									/>
-								</div>
-
-								<button className={styles.contactButton} type='submit'>
-									SEND
-								</button>
-							</form>
+							</div>
 						</div>
-					</div>
-
-					<div className={styles.contact_Right}>
-						<h1>Location</h1>
-						<p>Bedok Reservoir Road, Singapore</p>
-						<h1>Social</h1>
-						<div className={styles.twitterIcon}></div>
-						<div className={styles.linkedinIcon}></div>
 					</div>
 				</div>
 			</div>
-			<Footer></Footer>
+			{/* <Footer></Footer> */}
 		</>
 	);
 };

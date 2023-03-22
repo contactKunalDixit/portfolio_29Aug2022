@@ -1,0 +1,26 @@
+
+.App {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+
+    .mainContainer_left {
+        left: 0px;
+        width: 25%;
+        position: fixed;
+    }
+
+    .mainContainer_right {
+        position: absolute;
+        width: 75%;
+        right: 0px;
+        top: 0px;
+        background-image: linear-gradient(rgba(77, 44, 160, 0.9), rgba(77, 44, 160, 0.9)), url("./images/App_Wallpaper.jpg");
+        background-repeat: no-repeat;
+        /* background-size: cover; */
+        /* background-blend-mode: saturation; */
+        /* box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2); */
+
+    }
+}
