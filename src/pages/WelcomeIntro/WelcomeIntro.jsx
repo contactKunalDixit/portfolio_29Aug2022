@@ -38,17 +38,18 @@ const WelcomeIntro = () => {
 							deployment, knowledge transfer and more.
 						</h2>
 					</div>
-
-					<NavLink
-						to='/services'
-						style={({ isActive }) => {
-							return isActive ? { color: 'rgb(72, 247, 87)' } : {};
-						}}
-					>
-						<button type='button' className='Navbutton'>
-							SEE WHAT I CAN DO
-						</button>
-					</NavLink>
+					<div className='NavLinkButton'>
+						<NavLink
+							to='/services'
+							style={({ isActive }) => {
+								return isActive ? { color: 'rgb(72, 247, 87)' } : {};
+							}}
+						>
+							<button type='button' className='Navbutton'>
+								SEE WHAT I CAN DO
+							</button>
+						</NavLink>
+					</div>
 				</div>
 			</div>
 		</div>
