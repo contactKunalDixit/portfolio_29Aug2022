@@ -1,6 +1,7 @@
 import React from 'react';
 // import styles from './welcomeIntro.module.css';
 import './welcomeIntro.scss';
+import { NavLink } from 'react-router-dom';
 const WelcomeIntro = () => {
 	return (
 		<div className='welcomeIntro'>
@@ -38,9 +39,16 @@ const WelcomeIntro = () => {
 						</h2>
 					</div>
 
-					<button type='button' className='Navbutton'>
-						SEE WHAT I CAN DO
-					</button>
+					<NavLink
+						to='/services'
+						style={({ isActive }) => {
+							return isActive ? { color: 'rgb(72, 247, 87)' } : {};
+						}}
+					>
+						<button type='button' className='Navbutton'>
+							SEE WHAT I CAN DO
+						</button>
+					</NavLink>
 				</div>
 			</div>
 		</div>
