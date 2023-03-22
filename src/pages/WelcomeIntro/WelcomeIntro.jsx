@@ -11,6 +11,9 @@ const WelcomeIntro = () => {
 						KUNAL DIXIT
 						<br />
 					</h1>
+					<h4 className='headsubTitle'>
+						Knowledge Management + Customer Success
+					</h4>
 					<div className='subTitleSection'>
 						<h2 className='subTitle'>
 							Specialing in managing Customer Success, Application and Systems
