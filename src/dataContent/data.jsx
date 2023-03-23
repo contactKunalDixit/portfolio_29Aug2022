@@ -70,6 +70,13 @@ export let workExperience = [
 export let testimonials = [
 	{
 		year: 'Current',
+		title: 'Chrysalis HRD Team',
+		desc: 'Kunal led the project single handedly, and ensured the highest LEMS improvement of 13.7% and a feedback score of 4.73/5 across 37 Virtual sessions covering over 1500+ participants. The feedback shared by the client for Kunal was of great facilitation style, the connect with the audience and ensuring consistency across all batches. Kunal has also been an integral part of other projects and has consistently contributed and delivered',
+		key: 0.912,
+		icon: '<TerminalIcon>',
+	},
+	{
+		year: 'Current',
 		title: 'Salman F. - Service Delivery, RateGain',
 		desc: "He is very thoughtful and empathetic which shows up in his training results.He has the ability to connect with people and devise methods to enhance their potential which is why he is the best fit for any organization's training needs. There is no doubt that he is the right person to interact and develop the future leaders of any company. I am pleased to have worked with Kunal and recommend him for all & any L&D requirements.",
 		key: 1,
