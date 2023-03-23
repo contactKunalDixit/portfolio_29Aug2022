@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-
 import './services.scss';
 
 const Services = (props) => {
@@ -37,7 +36,7 @@ const Services = (props) => {
 						<div className='cardsGroup'>
 							{props.servicesProps.map((item) => (
 								<div className='card' key={item.key}>
-									<div className='cardLeft'>{props.servicesProps.icon}</div>
+									{/* <div className='cardLeft'>{`<${item.icon}/>`} </div> */}
 									<div className='cardRight'>
 										<h4>{item.title}</h4>
 										<p> {item.desc}</p>

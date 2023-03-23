@@ -99,20 +99,27 @@
                         justify-content:flex-start;
                         
                         align-items: flex-start;
+                        position:relative;
                         
                     }
                     .cardRight>h4{
                         color:white;
-                        font-size: clamp(0.5rem, 0.4rem + 0.8vw, 1.4rem);
+                        
                         font-size: clamp(0.5rem, -0.25rem + 1vw, 1rem);
                         font-weight: 400;
                         letter-spacing: 0.05rem;;
+                        position:absolute;
+                        bottom:16px;
+                        right:8px;
+                        
+                        margin-bottom:0px;
                     }
                     .cardRight>p{
                         font-size: clamp(1rem, 0.4rem + 0.8vw, 1.4rem);
                         font-size: clamp(0.8rem, 0.2rem + 0.8vw, 1.2rem);
                         letter-spacing: 0.05rem;;
                         font-weight:300;
+                        padding-bottom:2rem
                     }
                 }
             }
