@@ -1,0 +1,109 @@
+.navbar {
+	text-align: center;
+	background-color: rgb(49, 36, 79);
+	height: 100vh;
+	height: 100svh;
+	font-size: 1rem;
+        .navToggleButton{
+            display:none;
+        }
+        .nav_ul {
+        list-style-type: none; /* Remove bullets */
+        padding: 0; /* Remove padding */
+        margin: 0 auto; /* Remove margins */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        height: 100%;
+        width: 75%;
+
+            .nav_list {
+            margin-top: 2rem;
+            transition: transform 0.3s, color 5s; /* Animation */
+            
+                     a {
+                        text-decoration: none;
+
+                        color: rgb(237, 196, 196);
+                        font-size: 1.1rem;
+                        }
+
+                        a:hover {
+                            color: white;
+                        }
+            }
+            .nav_list:hover {
+            transform: scale(1.1);
+            color: white;
+            color: rgb(235, 199, 205);
+            }
+
+            .nav_hr {
+            width: 100%;
+            margin: 0.7rem 0;
+            padding: 0.1rem;
+            background-image: linear-gradient(
+            to right,
+            red,
+            orange,
+            yellow,
+            green,
+            blue,
+            indigo,
+            violet
+        );
+    }
+}
+
+
+
+.highlight {
+	width: 100%;
+	text-align: end;
+}
+
+}
+
+//  Media query not required for 768px and above;
+@media (min-width: 360px) and (max-width: 767.98px){
+	.navbar{
+        height: 4rem;
+        width: 100%;
+        font-size:0.4rem;
+        padding:0.5rem;
+        display:flex;
+        margin:0 auto;
+        justify-content: center;
+        align-items: center;
+        // display:none;
+        // position:fixed;
+
+          .navToggleButton{
+            width: 96%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;  
+            opacity:0.9;
+            background-color: red;;
+            padding:0.5rem;
+            .navToggleButton_Icon{
+                font-size: 1.1rem;;
+                border:none;
+                
+
+            }
+        }
+        
+
+        .nav_ul{
+            align-items: center;
+            display:none;
+
+            .nav_list{
+                margin-top: 1rem;;
+                
+            }
+        }
+    }
+}

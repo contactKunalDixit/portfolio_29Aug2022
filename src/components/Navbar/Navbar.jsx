@@ -1,14 +1,20 @@
 import React from 'react';
-import styles from './navbar.module.css';
+// import styles from './navbar.module.css';
 import { NavLink } from 'react-router-dom';
-
+import './navbar.scss';
+import { AiOutlineMenu } from 'react-icons/ai';
 const Navbar = () => {
 	return (
 		<>
-			<div className={styles.navbar}>
-				<ul className={styles.nav_ul}>
+			<div className='navbar'>
+				<div className='navToggleButton'>
+					<button>
+						<AiOutlineMenu className='navToggleButton_Icon' />
+					</button>
+				</div>
+				<ul className='nav_ul'>
 					{/* <div className={styles.highlight}> */}
-					<li className={styles.nav_list}>
+					<li className='nav_list'>
 						<NavLink
 							to='/'
 							style={({ isActive }) => {
@@ -18,9 +24,9 @@ const Navbar = () => {
 							Welcome
 						</NavLink>
 					</li>
-					<div className={styles.nav_hr} />
+					<div className='nav_hr' />
 					{/* </div>   */}
-					<li className={styles.nav_list}>
+					<li className='nav_list'>
 						<NavLink
 							to='/services'
 							style={({ isActive }) => {
@@ -30,8 +36,8 @@ const Navbar = () => {
 							What I Do
 						</NavLink>
 					</li>
-					<div className={styles.nav_hr} />
-					<li className={styles.nav_list}>
+					<div className='nav_hr' />
+					<li className='nav_list'>
 						<NavLink
 							to='/mywork'
 							style={({ isActive }) => {
@@ -41,9 +47,9 @@ const Navbar = () => {
 							My Work
 						</NavLink>
 					</li>
-					<div className={styles.nav_hr} />
+					<div className='nav_hr' />
 
-					<li className={styles.nav_list}>
+					<li className='nav_list'>
 						<NavLink
 							to='/testimonials'
 							style={({ isActive }) => {
@@ -53,9 +59,9 @@ const Navbar = () => {
 							Testimonials
 						</NavLink>
 					</li>
-					<div className={styles.nav_hr} />
+					<div className='nav_hr' />
 
-					<li className={styles.nav_list}>
+					<li className='nav_list'>
 						<NavLink
 							to='/contact'
 							style={({ isActive }) => {
@@ -65,7 +71,7 @@ const Navbar = () => {
 							Contact
 						</NavLink>
 					</li>
-					<div className={styles.nav_hr} />
+					<div className='nav_hr' />
 				</ul>
 			</div>
 		</>

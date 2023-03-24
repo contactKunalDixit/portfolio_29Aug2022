@@ -24,3 +24,42 @@
 
     }
 }
+
+//  Media query not required for 768px and above;
+@media (min-width: 360px) and (max-width: 767.98px){
+ .App{
+    flex-direction: column;;
+    position:relative;
+    
+    
+
+    .mainContainer_left{
+        width: 100%;
+        height: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position:fixed;
+        top:0;
+        left:0;
+        z-index: 3000;
+        
+        
+        
+           
+    }
+    .mainContainer_right {
+        
+        height: 100vh;
+        height: 100svh;
+        height: calc(100svh - 4rem);       
+        position:absolute;
+        width: 100%;
+        left: 0px;
+        top:4rem;
+        
+        
+
+    }
+ }  
+}

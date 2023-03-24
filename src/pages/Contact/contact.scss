@@ -156,3 +156,53 @@ background: linear-gradient(180deg, rgba(35,67,120,1) 0%, rgba(31,56,97,1) 42%, 
 }
 
 
+
+@media (min-width: 992px) and (max-width: 1199.98px)
+{
+ .contact{
+    
+        .outer_Container{
+            .main_container{
+                .work_desc{
+                    h1{
+                        line-height: normal;
+                        
+                    }
+                }
+                .contentPart{
+                    .cardsGroup{
+                        padding:0px ;;
+                        ul{
+                            li{
+                                padding:0.25rem 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// @media only screen and (max-width: 991.98px)
+@media (min-width: 768px) and (max-width: 991.98px){
+    .contact{
+        .outer_Container{
+            .main_container{
+                .work_desc{
+                    h1{
+                        line-height: normal;
+                        color:white;
+                    }
+                }
+                .contentPart{
+                    flex-direction: column;
+                    .contactDetails{
+                        .c_info{
+                            margin-top:1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

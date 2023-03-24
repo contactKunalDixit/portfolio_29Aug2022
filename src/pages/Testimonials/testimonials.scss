@@ -129,3 +129,46 @@
 }
 
 
+@media only screen and (max-width: 1199.98px){
+
+.testimonials{
+    .outer_Container{
+        .main_container{
+            .work_desc{
+                .headTitle{
+                    line-height: normal;;
+                }
+            }
+        }
+    }
+}
+
+}
+
+@media (min-width: 360px) and (max-width: 767.98px){
+    .testimonials{
+        // height: 100%;
+        
+        .bg_Image{    
+            top:0;
+            left:0;
+            position:fixed;
+        }
+        .outer_Container{
+            .main_container{
+                .work_desc{
+                    align-items: center;;
+                    .headTitle{
+                        text-align: center;
+                         
+                         font-size: clamp(2rem, 0.5882rem + 6.2748vw, 3.6rem);
+                        //  font-size: 1rem;;
+                    }
+                }
+            }
+        }
+
+
+
+    }
+}
