@@ -24,7 +24,7 @@ const Contact = () => {
 								</h4>
 								<ul>
 									<li>Customer support management</li>
-									<li>Platform/systems knowledge management</li>
+									<li>Platform/ Systems knowledge management</li>
 									<li>Application demonstrations</li>
 									<li>Implementation management</li>
 									<li>Training portfolio management</li>

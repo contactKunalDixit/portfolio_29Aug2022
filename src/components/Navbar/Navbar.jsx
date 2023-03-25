@@ -1,14 +1,21 @@
 import React from 'react';
-// import styles from './navbar.module.css';
+
 import { NavLink } from 'react-router-dom';
 import './navbar.scss';
 import { AiOutlineMenu } from 'react-icons/ai';
-const Navbar = () => {
+
+// eslint-disable-next-line react/prop-types
+const Navbar = ({ menuModalOpens }) => {
 	return (
-		<>
+		<React.Fragment>
 			<div className='navbar'>
-				<div className='navToggleButton'>
-					<button>
+				<div className='navToggleButton mobileScreen'>
+					<button
+						onClick={() => {
+							menuModalOpens();
+							console.log('Working till Nav module');
+						}}
+					>
 						<AiOutlineMenu className='navToggleButton_Icon' />
 					</button>
 				</div>
@@ -74,7 +81,7 @@ const Navbar = () => {
 					<div className='nav_hr' />
 				</ul>
 			</div>
-		</>
+		</React.Fragment>
 	);
 };
 

@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 /* eslint-disable react/react-in-jsx-scope */
 // import styles from './App.module.css';
 import Navbar from './components/Navbar/Navbar';
@@ -10,13 +11,26 @@ import NotFound from './pages/NotFound/NotFound';
 import { servicesSection } from './dataContent/data';
 import './App.scss';
 import { Routes, Route } from 'react-router-dom';
+import Modal from './components/Modal/Modal';
 
 function App() {
+	const [modalOpen, setModalOpen] = useState(false);
+
+	let menuModalOpens = () => {
+		console.log('triggered');
+		setModalOpen(true);
+	};
+
+	// ! Modal functions:
+
+	const handleCloseModal = () => {
+		setModalOpen(false);
+	};
 	return (
 		<div className='container-fluid-error'>
 			<div className='App'>
 				<div className='mainContainer_left'>
-					<Navbar></Navbar>
+					<Navbar menuModalOpens={menuModalOpens}></Navbar>
 				</div>
 				<div className='mainContainer_right'>
 					<Routes>
@@ -31,6 +45,8 @@ function App() {
 						<Route path='*' element={<NotFound />} />
 					</Routes>
 				</div>
+
+				<Modal isOpen={modalOpen} onClose={handleCloseModal}></Modal>
 			</div>
 		</div>
 	);

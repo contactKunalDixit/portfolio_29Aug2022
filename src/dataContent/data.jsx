@@ -114,6 +114,6 @@ export let testimonials = [
 		year: "Nov'05 ‐ May'08",
 		title: 'Anupam M., General Manager, Hotel Revenue',
 		desc: `"Kunal is crisp, dependable, hardworking, goal oriented, strong on people relationships, detail oriented and great with project management. Little wonder that he delivers! He has worked closely with me in the past for an year and I have seen him grow in his faculties mentioned above. He has the ability to soak in a lot, can prioritise and remembers...just when you require it...."`,
-		key: 6,
+		key: 7,
 	},
 ];
