@@ -2,7 +2,7 @@ import React from 'react';
 
 import { NavLink } from 'react-router-dom';
 import './navbar.scss';
-import { AiOutlineMenu } from 'react-icons/ai';
+import { GiHamburgerMenu } from 'react-icons/gi';
 
 // eslint-disable-next-line react/prop-types
 const Navbar = ({ menuModalOpens }) => {
@@ -16,7 +16,7 @@ const Navbar = ({ menuModalOpens }) => {
 							console.log('Working till Nav module');
 						}}
 					>
-						<AiOutlineMenu className='navToggleButton_Icon' />
+						<GiHamburgerMenu className='navToggleButton_Icon' />
 					</button>
 				</div>
 				<ul className='nav_ul'>

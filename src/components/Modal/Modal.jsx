@@ -3,6 +3,9 @@ import React, { useState, useEffect } from 'react';
 // import ReactDOM from 'react-dom/client';
 import './modal.scss';
 import PortalReactDOM from 'react-dom';
+import { NavLink } from 'react-router-dom';
+
+import { MdClose } from 'react-icons/md';
 
 const Modal = ({ isOpen, onClose }) => {
 	const [modalState, setModalState] = useState(isOpen);
@@ -26,27 +29,74 @@ const Modal = ({ isOpen, onClose }) => {
 		? PortalReactDOM.createPortal(
 				<div className='modal-container' onClick={handleBackdropClick}>
 					<div className='modal-content'>
-						<button className='modal-close' onClick={handleClose}>
-							&times;
-						</button>
+						<div className='buttonSec'>
+							<button className='modal-close' onClick={handleClose}>
+								<MdClose></MdClose>
+							</button>
+						</div>
+
 						<div className='textContent'>
-							<h2>Thank You!</h2>
-							<br />
-							<p>Wow!</p>
-							<br />
-							<p>
-								I thrilled to have caught your attention and appreciate you
-								taking the time to reach out to me.
-							</p>
-							<br />
-							<p>
-								I value your feedback and look forward to responding promptly.
-							</p>
-							<br />
-							<p>
-								Regards,
-								<br /> Kunal D.
-							</p>
+							<ul className='nav_ul'>
+								{/* <div className={styles.highlight}> */}
+								<li className='nav_list'>
+									<NavLink
+										to='/'
+										style={({ isActive }) => {
+											return isActive ? { color: 'rgb(72, 247, 87)' } : {};
+										}}
+									>
+										WELCOME
+									</NavLink>
+								</li>
+								<div className='nav_hr' />
+								{/* </div>   */}
+								<li className='nav_list'>
+									<NavLink
+										to='/services'
+										style={({ isActive }) => {
+											return isActive ? { color: 'rgb(72, 247, 87)' } : {};
+										}}
+									>
+										WHAT I DO
+									</NavLink>
+								</li>
+								<div className='nav_hr' />
+								<li className='nav_list'>
+									<NavLink
+										to='/mywork'
+										style={({ isActive }) => {
+											return isActive ? { color: 'rgb(72, 247, 87)' } : {};
+										}}
+									>
+										MY WORK
+									</NavLink>
+								</li>
+								<div className='nav_hr' />
+
+								<li className='nav_list'>
+									<NavLink
+										to='/testimonials'
+										style={({ isActive }) => {
+											return isActive ? { color: 'rgb(72, 247, 87)' } : {};
+										}}
+									>
+										TESTIMONIALS
+									</NavLink>
+								</li>
+								<div className='nav_hr' />
+
+								<li className='nav_list'>
+									<NavLink
+										to='/contact'
+										style={({ isActive }) => {
+											return isActive ? { color: 'rgb(72, 247, 87)' } : {};
+										}}
+									>
+										CONTACT
+									</NavLink>
+								</li>
+								<div className='nav_hr' />
+							</ul>
 						</div>
 					</div>
 				</div>,
