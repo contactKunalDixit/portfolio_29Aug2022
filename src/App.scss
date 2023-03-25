@@ -26,6 +26,8 @@
 }
 
 //  Media query not required for 768px and above;
+
+
 @media (min-width: 360px) and (max-width: 767.98px){
  .App{
     flex-direction: column;;
@@ -35,7 +37,7 @@
 
     .mainContainer_left{
         width: 100%;
-        height: 4rem;
+        height: 3rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -52,11 +54,11 @@
         
         height: 100vh;
         height: 100svh;
-        height: calc(100svh - 4rem);       
+        height: calc(100svh - 3rem);       
         position:absolute;
         width: 100%;
         left: 0px;
-        top:4rem;
+        top:3rem;
         
         
 

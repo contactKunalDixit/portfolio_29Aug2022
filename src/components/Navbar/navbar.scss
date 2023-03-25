@@ -68,7 +68,7 @@
 //  Media query not required for 768px and above;
 @media (min-width: 360px) and (max-width: 767.98px){
 	.navbar{
-        height: 4rem;
+        height: 3rem;
         width: 100%;
         font-size:0.4rem;
         padding:0.5rem;
@@ -86,13 +86,20 @@
             align-items: center;  
             opacity:0.9;
             background-color: red;;
-            padding:0.5rem;
-            .navToggleButton_Icon{
-                font-size: 1.1rem;;
-                border:none;
+            background-color: transparent;
+            padding:0 0.5rem;
+            height: 100%;
+            button{
+                // border-radius: 10px;;
+                opacity:0.7;
+                .navToggleButton_Icon{
+                    font-size: 2rem;;
+                    border:none;
                 
-
             }
+            }
+
+            
         }
         
 
