@@ -38,7 +38,7 @@ const Modal = ({ isOpen, onClose }) => {
 						<div className='textContent'>
 							<ul className='nav_ul'>
 								{/* <div className={styles.highlight}> */}
-								<li className='nav_list'>
+								<li className='nav_list' onClick={handleClose}>
 									<NavLink
 										to='/'
 										style={({ isActive }) => {
@@ -50,7 +50,7 @@ const Modal = ({ isOpen, onClose }) => {
 								</li>
 								<div className='nav_hr' />
 								{/* </div>   */}
-								<li className='nav_list'>
+								<li className='nav_list' onClick={handleClose}>
 									<NavLink
 										to='/services'
 										style={({ isActive }) => {
@@ -61,7 +61,7 @@ const Modal = ({ isOpen, onClose }) => {
 									</NavLink>
 								</li>
 								<div className='nav_hr' />
-								<li className='nav_list'>
+								<li className='nav_list' onClick={handleClose}>
 									<NavLink
 										to='/mywork'
 										style={({ isActive }) => {
@@ -73,7 +73,7 @@ const Modal = ({ isOpen, onClose }) => {
 								</li>
 								<div className='nav_hr' />
 
-								<li className='nav_list'>
+								<li className='nav_list' onClick={handleClose}>
 									<NavLink
 										to='/testimonials'
 										style={({ isActive }) => {
@@ -85,7 +85,7 @@ const Modal = ({ isOpen, onClose }) => {
 								</li>
 								<div className='nav_hr' />
 
-								<li className='nav_list'>
+								<li className='nav_list' onClick={handleClose}>
 									<NavLink
 										to='/contact'
 										style={({ isActive }) => {
