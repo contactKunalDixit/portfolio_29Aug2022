@@ -5,7 +5,7 @@ import './modal.scss';
 import PortalReactDOM from 'react-dom';
 import { NavLink } from 'react-router-dom';
 
-import { MdClose } from 'react-icons/md';
+// import { MdClose } from 'react-icons/md';
 
 const Modal = ({ isOpen, onClose }) => {
 	const [modalState, setModalState] = useState(isOpen);
@@ -31,7 +31,7 @@ const Modal = ({ isOpen, onClose }) => {
 					<div className='modal-content'>
 						<div className='buttonSec'>
 							<button className='modal-close' onClick={handleClose}>
-								<MdClose></MdClose>
+								{/* <MdClose></MdClose> */}X
 							</button>
 						</div>
 
