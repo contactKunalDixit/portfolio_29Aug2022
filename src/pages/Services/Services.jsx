@@ -11,9 +11,7 @@ const Services = (props) => {
 					<div className='main_container'>
 						<div className='service_desc'>
 							<h1 className='headTitle'>WHAT I DO</h1>
-							<p className='paraDesc'>
-								I handhold customers and bring them closer to the business.
-							</p>
+
 							<p className='paraDesc'>
 								It is during the initial phases of the customer cycle that the
 								foundation for the relationship between the customer and the
@@ -30,6 +28,11 @@ const Services = (props) => {
 								offered. This, in turn, leads to higher Net Promoter Score (NPS)
 								for businesses as satisfied customers are more likely to
 								recommend the product or service to others.
+							</p>
+
+							<p className='paraDesc'>
+								I handhold prospective & existing customers and bring them
+								closer to the business.
 							</p>
 						</div>
 
